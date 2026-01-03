@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import SearchBar from './componants/SearchBar'
-import UserCard from './componants/UserCard'
+import SearchBar from './Componants/SearchBar'
+import UserCard from './Componants/UserCard'
 
 function App() {
 
