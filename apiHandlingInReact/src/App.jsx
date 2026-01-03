@@ -70,16 +70,16 @@ const controller = new AbortController();
 
   return (
     <>
-  <div className="flex flex-col items-center gap-4 mt-10 w-full">
+  <div className="flex flex-col items-center gap-4 w-full max-w-full overflow-x-hidden">
+    <div className='bg-gray-800 w-full text-white flex flex-col items-center py-6 mb-4'>
     <i className="fa-brands fa-github text-6xl leading-none"></i>
-
     <h2 className="text-2xl font-bold py-4">
       GitHub User Search
     </h2>
-
     <p>Search for GitHub users and view their profiles</p>
-
+    </div>
     <SearchBar query={query} setQuery={setQuery} />
+
     <UserCard user={user} loading={loading} error={error} />
   </div>
 </>
