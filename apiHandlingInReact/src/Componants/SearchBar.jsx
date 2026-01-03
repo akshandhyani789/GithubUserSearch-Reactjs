@@ -11,7 +11,7 @@ function SearchBar({query, setQuery}) {
       value={query}
       onChange={(e) => setQuery(e.target.value)}
       placeholder="Search GitHub username.."
-      className="focus:outline-none"
+      className="focus:outline-none sm:w-150"
     />
   </div>
 </div>

@@ -20,7 +20,7 @@ function UserCard({ user, loading, error }) {
 
   if (!user) {
     return (
-      <div className="bg-white p-6 shadow-2xl shadow-black/20 rounded-xl mt-6 flex flex-col items-center gap-4">
+      <div className="bg-white p-6 shadow-2xl shadow-black/35 rounded-xl mt-6 flex flex-col items-center gap-4 border-2 border-dashed border-gray-300">
         <span className="bg-gray-200 p-4 rounded-full">
           <i className="fa-solid fa-magnifying-glass text-3xl text-gray-500 leading-none"></i>
         </span>
@@ -32,7 +32,7 @@ function UserCard({ user, loading, error }) {
 
   // ✅ user FOUND
   return (
-    <div className="bg-white px-20 py-10 rounded-lg shadow-md mt-6 flex gap-4 flex-col">
+    <div className="bg-white px-20 py-10 rounded-xl shadow-2xl shadow-black/35 mt-6 flex gap-4 flex-col border-2 border-dashed border-gray-300">
       <div className="flex gap-4">
          <img
         src={user.avatar_url}
